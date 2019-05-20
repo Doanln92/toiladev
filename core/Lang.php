@@ -19,7 +19,7 @@ class Lang{
         // test = Doãn Đẹp Trai + Giàu = auto có gấu
 
         preg_match_all('/([^\=\r\n\t]*?)\s*\=(.*)?(\r\n|\r|\n|$)/i', $content, $match);
-        $data = array_combine($match[1], $match[2]);
+        $data = array_combine(array_map('trim', $match[1]), array_map('trim', $match[2]));
 
         self::$data = new Arr($data);
     }
