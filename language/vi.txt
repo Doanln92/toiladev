@@ -1,0 +1,4 @@
+name = Tên
+gender = Giới tính
+age=Tuổi
+test = Doãn Đẹp Trai + Giàu = auto có gấu
